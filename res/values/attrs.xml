@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="title">
+        <attr name="title" format="string"></attr>
+        <attr name="backward" format="string"></attr>
+        <attr name="forward" format="string"></attr>
+    </declare-styleable>
+
+</resources>
