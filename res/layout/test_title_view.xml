@@ -5,16 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/default_background" >
 
-    <com.diudiustudio.utilsforandroid.TitleView
-        android:id="@+id/title_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        dds:ib_src_backward="@drawable/btn_backward"
-        dds:ib_src_forward="@drawable/btn_backward"
-        dds:tv_title_text="title test" >
-    </com.diudiustudio.utilsforandroid.TitleView>
-  <LinearLayout
-      android:layout_below="@id/title_view"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
@@ -46,6 +37,5 @@
             dds:tv_title="title test" >
         </com.diudiustudio.utilsforandroid.SettingItemView>
     </LinearLayout>
-   
 
 </RelativeLayout>

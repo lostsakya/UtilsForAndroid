@@ -25,7 +25,6 @@ public class MainActivity extends Activity {
 	}
 
 	public void onBackwardClick(View view) {
-
 		finish();
 	}
 

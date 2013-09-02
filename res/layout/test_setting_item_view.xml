@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dds="http://schemas.android.com/apk/res/com.diudiustudio.utilsforandroid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.diudiustudio.utilsforandroid.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dds:ib_src_backward="@drawable/btn_backward"
+        dds:ib_src_forward="@drawable/btn_backward"
+        dds:tv_title_text="title test" >
+    </com.diudiustudio.utilsforandroid.TitleView>
+
+</LinearLayout>

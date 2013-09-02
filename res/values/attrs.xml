@@ -2,9 +2,15 @@
 <resources>
 
     <declare-styleable name="title">
-        <attr name="title" format="string"></attr>
-        <attr name="backward" format="string"></attr>
-        <attr name="forward" format="string"></attr>
+        <attr name="tv_title_text" format="reference|string"></attr>
+        <attr name="ib_src_backward" format="reference"></attr>
+        <attr name="ib_src_forward" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="setting_item">
+        <attr name="iv_src_first" format="reference" />
+        <attr name="iv_src_last" format="reference" />
+        <attr name="tv_title" format="reference|string" />
+        <attr name="tv_content" format="reference|string" />
     </declare-styleable>
 
 </resources>

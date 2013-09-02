@@ -2,16 +2,17 @@ package com.diudiustudio.utilsforandroid;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class TitleView extends RelativeLayout {
 
-	private Button forward;
-	private Button backward;
+	private ImageButton forward;
+	private ImageButton backward;
 	private TextView title;
 
 	TitleView(Context context) {
@@ -32,16 +33,19 @@ public class TitleView extends RelativeLayout {
 
 		} else {
 
-			String titleString = attributes.getString(R.styleable.title_title);
-			String forwardString = attributes.getString(R.styleable.title_forward);
-			String backwardString = attributes.getString(R.styleable.title_backward);
-			title = (TextView) view.findViewById(R.id.tv_title);
-			title.setText(titleString);
-			backward = (Button) view.findViewById(R.id.btn_backward);
-			backward.setText(backwardString);
-			forward = (Button) view.findViewById(R.id.btn_forward);
-			forward.setText(forwardString);
+			String titleString = attributes.getString(R.styleable.title_tv_title_text);
+			Drawable forwardDrawable = attributes.getDrawable(R.styleable.title_ib_src_forward);
+			Drawable backwardDrawable = attributes.getDrawable(R.styleable.title_ib_src_backward);
 			attributes.recycle();
+
+			title = (TextView) view.findViewById(R.id.tv_title);
+			backward = (ImageButton) view.findViewById(R.id.ib_backward);
+			forward = (ImageButton) view.findViewById(R.id.ib_forward);
+
+			title.setText(titleString);
+			backward.setImageDrawable(backwardDrawable);
+			forward.setImageDrawable(forwardDrawable);
+
 		}
 	}
 

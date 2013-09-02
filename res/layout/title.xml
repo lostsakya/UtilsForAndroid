@@ -4,9 +4,8 @@
     android:layout_height="wrap_content"
     android:background="@drawable/shape_rectangle" >
 
-    <Button
-        android:text="backward"
-        android:id="@+id/btn_backward"
+    <ImageButton
+        android:id="@+id/ib_backward"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -20,9 +19,8 @@
         android:layout_centerInParent="true"
         android:text="title" />
 
-    <Button
-        android:text="forward"
-        android:id="@+id/btn_forward"
+    <ImageButton
+        android:id="@+id/ib_forward"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"

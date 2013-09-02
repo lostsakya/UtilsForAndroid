@@ -3,4 +3,5 @@
 	<corners 
 	    android:radius="@dimen/rectangle_corner_radius"
 	    />
+	<solid android:color="#00ffffff"/>
 </shape>
