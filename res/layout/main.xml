@@ -4,12 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <com.diudiustudio.utilsforandroid.Title
+    <com.diudiustudio.utilsforandroid.TitleView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        dds:backward="backward"
-        dds:forward="forward"
+        dds:backward="backward test"
+        dds:forward="forward test"
         dds:title="title test" >
-    </com.diudiustudio.utilsforandroid.Title>
+    </com.diudiustudio.utilsforandroid.TitleView>
+    
+    
 
 </RelativeLayout>

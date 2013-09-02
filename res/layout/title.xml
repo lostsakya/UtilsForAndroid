@@ -5,6 +5,7 @@
     android:background="@drawable/shape_rectangle" >
 
     <Button
+        android:text="backward"
         android:id="@+id/btn_backward"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,14 +17,15 @@
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:text="title" />
 
     <Button
+        android:text="forward"
         android:id="@+id/btn_forward"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginLeft="4dp"
         android:layout_marginRight="@dimen/title_button_vertical_margin"
         android:onClick="onForwardClick" />
 
